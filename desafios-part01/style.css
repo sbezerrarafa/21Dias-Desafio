@@ -93,6 +93,7 @@ footer a {
   opacity: 0.7;
   font-size: 20px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 @keyframes animateBtn {
@@ -110,4 +111,52 @@ footer a {
   100% {
     opacity: 0;
   }
+}
+
+.fundo {
+  background-image: url('img/doguinho.png');
+  height: 100vh;
+  color: white;
+  font-family: arial;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.calculadora {
+  width: 230px;
+  background: black;
+  border-radius: 15px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.85);
+}
+.calculadora p {
+  background: white;
+  color: black;
+  padding: 20px;
+  margin: 10px 0;
+  font-size: 10px 20px;
+  text-align: right;
+}
+.calculadora button {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  background: rgb(31, 31, 31);
+  color: white;
+  border: none;
+  margin: 3px;
+}
+.calculadora button:hover {
+  background: black;
+}
+.calculadora .igual {
+  height: 106px;
+}
+.calculadora .zero {
+  width: 106px;
 }
