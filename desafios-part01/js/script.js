@@ -18,3 +18,37 @@ function calcular() {
     document.getElementById('resultado').innerHTML = "Nada..."
   }
 }
+
+// calendario
+
+var d = new Date();
+var semana = [
+  'Domingo',
+  'Segunda-Feira',
+  'Terça-Feira',
+  'Quarta-Feira',
+  'Quinta-Feira',
+  'Sexta-Feira',
+  'Sábado',
+];
+var mes = [
+  'janeiro',
+  'fevereiro',
+  'março',
+  'abril',
+  'maio',
+  'junho',
+  'julho',
+  'agosto',
+  'setembro',
+  'outubro',
+  'novembro',
+  'dezembro',
+];
+
+document.getElementById('dia-semana').innerHTML = semana[d.getDay()];
+const ano = (document.getElementById('ano').innerHTML = d.getFullYear());
+const mesAtual = (document.getElementById('mes').innerHTML =
+  mes[d.getMonth()]);
+const diaAtual = (document.getElementById('dia-mes').innerHTML =
+  d.getDate());
