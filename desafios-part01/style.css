@@ -234,3 +234,14 @@ footer a {
 .ano {
   margin-bottom: 20px;
 }
+
+/*  temporizador */
+
+#tempo {
+  color: white;
+  font-size: 40px;
+  background: blueviolet;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 7px;
+}
