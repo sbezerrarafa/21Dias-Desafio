@@ -4,11 +4,27 @@
   box-sizing: border-box;
 }
 
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px;
+  background: darkcyan;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
   height: 100vh;
-  padding: 20px;
+}
+.animacao {
+  width: 100%;
+  height: 400px;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid #707070;
 }
 input[type='checkbox'] {
   appearance: none;
@@ -107,6 +123,7 @@ input[type='checkbox']:checked:after {
     width: 200px;
   }
 }
+
 .night-mode {
   background: #121214;
   color: white;
