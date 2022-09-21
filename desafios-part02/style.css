@@ -15,6 +15,8 @@
 .sub-menu {
   padding: 20px;
   color: #34348b;
+  display: flex;
+  justify-content: space-between;
 }
 .sub-menu a {
   cursor: pointer;
@@ -205,6 +207,83 @@
   100% {
     width: 200px;
   }
+}
+.menu {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: white;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+  box-shadow: 0 0 0 0px #fff, 0 0 0 0px #fff;
+  /* isso ai de cima é como se fosse o from do animation */
+  transition: box-shadow 1s ease-in-out;
+}
+.hamburguer {
+  display: block;
+  background: black;
+  width: 30px;
+  height: 2px;
+  position: relative;
+  top: 29px;
+  left: 15px;
+  transition: 0.5s ease-in-out;
+}
+.menu:hover {
+  box-shadow: 0 0 0 8px #fff, 0 0 0 8px #fff;
+}
+
+.hamburguer::after,
+.hamburguer::before {
+  background: black;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+.hamburguer::before {
+  top: -10px;
+}
+.hamburguer::after {
+  bottom: -10px;
+}
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+input:checked ~ label .hamburguer::after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+input:checked ~ label .hamburguer::before {
+  transform: rotate(90deg);
+  top: 0;
+}
+input:checked ~ label .menu {
+  box-shadow: 0 0 0 1vh #fff, 0 0 0 1vw #fff;
+}
+.sub-menu ul {
+  position: absolute;
+  list-style: none;
+  opacity: 0;
+  transition: 0.25s 0.5s cubic-bezier(0, 1.07, 0, 1.02);
+}
+.lista-mobile {
+  text-align: center;
+  margin-top: 50px;
+}
+.lista-mobile li {
+  color: #34348b;
+  font-size: 24px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.sub-menu input:checked ~ ul {
+  opacity: 1;
 }
 
 .night-mode {
