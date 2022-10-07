@@ -1,0 +1,14 @@
+// $('.btn-carrinho').click(function () {
+//   $('#carrinho').addClass('active-carrinho');
+// });
+
+var cont = 0;
+var disp = document.getElementById("display");
+var btn = document.getElementById('btn-carrinho')
+
+function myFunction() {
+  console.log('entrou');
+  cont++;
+  $('.fn-carrinho').text(cont);
+};
+

@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  color: blueviolet;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+  gap: 20px;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+.banner {
+  margin-bottom: 50px;
+}
+.banner img {
+  min-height: 300px;
+  max-height: 420px;
+  object-fit: cover;
+}
+.produtos img {
+  width: 100%;
+  height: 300px;
+  object-fit: scale-down;
+}
+.produtos .col-md-4 {
+  margin-bottom: 30px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  margin-top: 100px;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+.active-carrinho {
+  width: 28px;
+  height: 28px;
+  background: #d6613e;
+  border-radius: 6px;
+  position: absolute;
+  margin: -3px 0px 0 37px;
+  opacity: 1;
+}
+#carrinho {
+  margin-top: -14px;
+  margin-left: 19px;
+  background: blueviolet;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+/* .fn-carrinho {
+  color: #fff;
+  text-align: center;
+} */
