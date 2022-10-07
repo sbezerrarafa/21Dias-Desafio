@@ -19,3 +19,16 @@ document.addEventListener("keydown", function (event) {
 
   $("#digitado").text(tecla)
 })
+
+
+function getPassword8() {
+  var chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ!@#$%^&*()+?><:{}[]";
+
+  var password1 = "";
+  for (var i = 0; i < 8; i++) {
+    var randomNumber = Math.floor(Math.random() * chars.length);
+    password1 += chars.substring(randomNumber, randomNumber + 1);
+  }
+  document.getElementById('senha8').value = password1
+}
+
